@@ -1,0 +1,21 @@
+int a=5,b=4,c=17,d=3; a-=b=c%=d;     ==== d=4    c=1  b=1    a=4
+
+int e=2, f=3;
+++e+=f--;   =====   f=2    e=6
+
+int g,h=2; g=(h++)+(--h);    g=4
+
+for(int i=0; i<10; i+=3) System.out.println(i); i=3,6,9
+
+for(int j=0; j<100; ++j)
+{
+j*=2; cout<<j<<endl; j= 0 2 6 14 30 62 126    
+}
+
+for(int k=0;k<100;)
+{
+if(k%2==0)
+++k;
+else
+k*=2; cout<<k<<endl;  k = 1 2 3 6 7 14 15 30 31 62 63 126
+}
